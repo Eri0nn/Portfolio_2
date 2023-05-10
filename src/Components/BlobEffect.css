@@ -1,0 +1,40 @@
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 48vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #7c3aed, #7c333a);
+  opacity: 0.6;
+  z-index: -2;
+  pointer-events: all;
+  animation: rotate 2.5s infinite linear;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  backdrop-filter: brightness(100%) blur(16vmax) !important;
+
+  pointer-events: none;
+}

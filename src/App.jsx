@@ -1,8 +1,8 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Blob from "./Components/BlobEffect.jsx";
-import "./Components/test.css";
+import Hero from "./Components/Hero/Hero";
+import Blob from "./UI/BlobEffect/BlobEffect.jsx";
+import "./UI/StartAnimation.css";
 
 function App() {
   return (
@@ -16,12 +16,7 @@ function App() {
       <div className="animation-container ">
         <div className="animation-box mx-5 overflow-hidden">
           <div className="relative mx-auto overflow-hidden rounded-3xl bg-transparent">
-            <div className="  w-full bg-transparent   backdrop-blur-[7px]">
-              <div className="gradient1"></div>
-              <div className="gradient2"></div>
-
-              <Hero className="" />
-            </div>
+            <Hero className="" />
             <Blob />
           </div>
         </div>

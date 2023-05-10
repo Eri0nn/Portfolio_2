@@ -1,6 +1,6 @@
 import React from "react";
-import NightToggle from "../UI/NightToggle";
-import "./test.css";
+import NightToggle from "../UI/NightToggle/NightToggle.jsx";
+import "../UI/StartAnimation.css";
 
 const Navbar = () => {
   return (

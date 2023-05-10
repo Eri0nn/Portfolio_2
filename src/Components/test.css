@@ -2,50 +2,161 @@
   margin: 0;
   padding: 0;
 }
-.containerz {
+.animation-container {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
-.boxz {
+.animation-box {
   animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+}
+
+.navbar {
+  animation: navanimate 5s forwards;
+  animation-iteration-count: 1;
 }
 
 @keyframes anime {
   0% {
     border-radius: 20px;
+    background: black;
 
     width: 60px;
     height: 60px;
-    background: #f0f0f0;
-    box-shadow: 10px 10px 10px #30415a, 10px 10px 10px #8c67ab,
-      0 0 0 #30415a inset, 0 0 0 #8c67ab inset;
+    /* box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset,
+      -10px -10px 10px #ffffff inset; */
+
+    background: linear-gradient(45deg, #7c333a, #7c3aed) border-box; /*3*/
+    -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+    mask-composite: exclude; /*5*/
+
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset,
+      -10px -10px 10px #ffffff inset;
+
+    border-width: 15px;
   }
   25% {
-    border-radius: 20px;
+    border-radius: 40px;
 
     width: 60px;
     height: 60px;
-    background: #f8f8f8;
-    box-shadow: 10px 10px 10px #30415a, 10px 10px 10px #8c67ab,
-      0 0 0 #30415a inset, 0 0 0 #8c67ab inset;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset,
+      -10px -10px 10px #ffffff inset;
+
+    background: linear-gradient(45deg, #7c3aed, #7c333a) border-box; /*3*/
+    -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+    mask-composite: exclude; /*5*/
+
+    border-width: 3px;
   }
   50% {
     border-radius: 20px;
+    background: black;
+
+    border-width: 3px;
 
     width: 60px;
-    height: 240px;
-    background: #f8f8f8;
-    box-shadow: 10px 10px 10px #30415a, 10px 10px 10px #8c67ab,
-      0 0 0 #30415a inset, 0 0 0 #8c67ab inset;
+    height: 85%;
+    box-shadow: 0 0 0 #cccccc, 0 0 0 #ffffff, 10px 10px 10px #cccccc inset,
+      -10px -10px 10px #ffffff inset;
+
+    background: linear-gradient(45deg, #7c333a, #7c3aed) border-box; /*3*/
+    -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+    mask-composite: exclude; /*5*/
+
+    border-width: 3px;
   }
   100% {
+    border-color: transparent;
     width: 100%;
-    height: 100%;
+    height: 97.7%;
     background: transparent;
   }
+}
+
+@keyframes navanimate {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# Other Gradient */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient1 {
+  --size: 400px;
+  --speed: 40s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(to right, #7c3aed, #7c333a);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: absolute;
+  z-index: -10;
+  top: -330px;
+  left: -150px;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 400px;
+  }
+}
+
+.gradient2 {
+  --size: 400px;
+  --speed: 40s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(to right, #7c3aed, #7c333a);
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: absolute;
+  z-index: -10;
+  bottom: -330px;
+  right: -200px;
+}
+
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 400px;
+  }
+}
+/* This is just to transition when you change the viewport size. */
+.gradient1,
+.gradient2 {
+  transition: all 0.25s ease-out;
 }

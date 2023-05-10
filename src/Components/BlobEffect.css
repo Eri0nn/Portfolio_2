@@ -13,8 +13,7 @@
 }
 
 #blob {
-  background-color: white;
-  height: 48vmax;
+  height: 36vmax;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
@@ -22,10 +21,10 @@
   translate: -50% -50%;
   border-radius: 50%;
   background: linear-gradient(to right, #7c3aed, #7c333a);
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: -2;
   pointer-events: all;
-  animation: rotate 2.5s infinite linear;
+  animation: rotate 3.5s infinite linear;
 }
 
 #blur {
@@ -34,7 +33,7 @@
   position: absolute;
   top: 0;
   z-index: -1;
-  backdrop-filter: brightness(100%) blur(16vmax) !important;
+  backdrop-filter: brightness(100%) blur(8vmax) !important;
 
   pointer-events: none;
 }

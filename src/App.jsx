@@ -10,15 +10,16 @@ function App() {
       <div className=" fixed z-0" id="stars"></div>
       <div className=" fixed z-0" id="stars2"></div>
       <div className=" fixed z-0" id="stars3"></div>
-      <div className=" mx-auto max-w-[1280px]   "></div>
 
-      <div className="containerz">
-        <div className="boxz mx-auto max-w-[1460px] overflow-hidden ">
-          <div className="relative mx-auto mt-5 overflow-hidden rounded-3xl bg-transparent">
-            <div className="">
-              <Navbar />
-            </div>
-            <div className=" mt-5 h-full w-full bg-transparent py-14 backdrop-blur-[4px]">
+      <Navbar />
+
+      <div className="animation-container ">
+        <div className="animation-box mx-5 overflow-hidden">
+          <div className="relative mx-auto overflow-hidden rounded-3xl bg-transparent">
+            <div className="  w-full bg-transparent   backdrop-blur-[7px]">
+              <div className="gradient1"></div>
+              <div className="gradient2"></div>
+
               <Hero className="" />
             </div>
             <Blob />

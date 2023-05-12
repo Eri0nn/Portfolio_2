@@ -4,15 +4,15 @@ import "./AuroraText.css";
 const AuroraText = () => {
   return (
     <div>
-      <h1 class="title">
+      <h2 className="title">
         Skills
-        <div class="aurora">
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
-          <div class="aurora__item"></div>
+        <div className="aurora">
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
+          <div className="aurora__item"></div>
         </div>
-      </h1>
+      </h2>
     </div>
   );
 };

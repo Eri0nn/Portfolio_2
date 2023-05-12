@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Blob from "./UI/BlobEffect/BlobEffect.jsx";
 import "./UI/StartAnimation.css";
+import Skills from "./Components/Skills.jsx";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
             <Blob />
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <Skills />
       </div>
     </>
   );

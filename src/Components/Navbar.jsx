@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className=" flex items-center justify-between">
         <h1 className="mr-10 border-b-2 text-[14px]">Projects</h1>
         <h1 className="mr-8 border-b-2 text-[14px]">About</h1>
-        <NightToggle />
+        <h1 className="mr-8 border-b-2 text-[14px]">Contact</h1>
       </div>
     </nav>
   );

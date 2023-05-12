@@ -1,11 +1,17 @@
 import React from "react";
 import AuroraText from "../UI/AuroraText/AuroraText";
+import SolarSystem from "../UI/SolarSystem/SolarSystem";
 
 const Skills = () => {
   return (
-    <div className="mx-auto mt-24 h-[100vh] w-max">
-      <AuroraText />
-    </div>
+    <>
+      {/* //{" "}
+      <div className=" w-max mx-auto mt-24">
+        // <AuroraText />
+        //{" "}
+      </div> */}
+      <SolarSystem />
+    </>
   );
 };
 

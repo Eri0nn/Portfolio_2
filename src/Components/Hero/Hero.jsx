@@ -2,6 +2,7 @@ import SocialIcons from "../../UI/SocialIcons/SocialIcons";
 import HeroButton from "../../UI/HeroButton/HeroButton";
 import StarsButton from "../../UI/StarsButton/StarsButton";
 import "./Hero.css";
+import MagicText from "../../UI/MagicText/MagicText";
 
 const Hero = () => {
   return (
@@ -12,10 +13,9 @@ const Hero = () => {
         <div className=" mx-auto flex h-[97vh] w-[60%] flex-col justify-center  bg-transparent    text-[34px] leading-[47.6px] text-white ">
           <h2 className="hero__header">Hi, I'm Erion</h2>
           <p>
-            a <span className=" font-semibold">web developer</span> specializing
-            in 3D designs and interactive experiences. I enjoy creating
-            meaningful narratives through motion graphics and experimenting with
-            new technology to convey stories.
+            a <MagicText /> specializing in 3D designs and interactive
+            experiences. I enjoy creating meaningful narratives through motion
+            graphics and experimenting with new technology to convey stories.
           </p>
           {/* <a className=" mt-14 w-max border-b-2">View My Work</a> */}
           <HeroButton />

@@ -4,7 +4,7 @@ import "./AuroraText.css";
 const AuroraText = () => {
   return (
     <div>
-      <h2 className="title">
+      <h1 className="title inline-block  text-[100px]">
         Skills
         <div className="aurora">
           <div className="aurora__item"></div>
@@ -12,7 +12,7 @@ const AuroraText = () => {
           <div className="aurora__item"></div>
           <div className="aurora__item"></div>
         </div>
-      </h2>
+      </h1>
     </div>
   );
 };

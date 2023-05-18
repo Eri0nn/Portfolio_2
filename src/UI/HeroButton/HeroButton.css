@@ -2,7 +2,6 @@
   position: relative;
   display: inline-block;
   padding: 25px 30px;
-  margin: 40px 0;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -13,7 +12,7 @@
   cursor: pointer;
   pointer-events: all;
   width: fit-content;
-  filter: hue-rotate(110deg);
+  filter: hue-rotate(140deg);
 }
 .buttoneffect:hover {
   background: #03e9f4;
@@ -26,7 +25,6 @@
 .buttoneffect:nth-child(2) {
   filter: hue-rotate(15deg);
 }
-
 
 .buttoneffect span {
   position: absolute;

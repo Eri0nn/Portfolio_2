@@ -1,17 +1,17 @@
 import React from "react";
-import "./TestButton.css";
+import "./HeroButton.css";
 
-const TestButton = () => {
+const HeroButton = () => {
   return (
     <>
-      <div className=" flex">
-        <h1 className="buttoneffect  text-[14px] " href="#">
+      <div className=" mt-5 flex">
+        <h1 className="buttoneffect  text-[14px]  " href="#">
           <span className=""></span>
           <span></span>
           <span></span>
           <span></span>
           View My Work{" "}
-         </h1>
+        </h1>
         {/* <h1 className="buttoneffect  text-[14px] " href="#">
           <span className=""></span>
           <span></span>
@@ -24,4 +24,4 @@ const TestButton = () => {
   );
 };
 
-export default TestButton;
+export default HeroButton;
